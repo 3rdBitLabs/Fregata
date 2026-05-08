@@ -65,6 +65,7 @@ This is the **community repository** for Fregata.
 | Ask for help, share tips, chat | [Discussions](https://github.com/3rdBitLabs/Fregata/discussions) |
 | Submit a community benchmark | [Discussions](https://github.com/3rdBitLabs/Fregata/discussions) - *Benchmarks* category |
 | Read the docs | [docs.fregata.app](https://docs.fregata.app) |
+| Press, media, or review coverage | [Press kit](press-kit/) |
 
 ### Filing a useful bug report
 
