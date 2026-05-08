@@ -6,7 +6,7 @@ body:
       value: |
         Need help getting Fregata working, or stuck on a configuration problem? Fill out the basics below and someone in the community (or a maintainer) will try to help.
 
-        Post in the **Q&A** or **Help** category.
+        Post in the **Q&A** or **Support** category.
 
   - type: input
     id: version
