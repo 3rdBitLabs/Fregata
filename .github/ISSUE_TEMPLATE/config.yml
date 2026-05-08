@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussions and community help
+    url: https://github.com/3rdBitLabs/Fregata/discussions
+    about: Ask for help, share tips, post benchmarks, or chat with other Fregata users.
+  - name: Documentation
+    url: https://docs.fregata.app
+    about: Setup, configuration, and feature docs.
+  - name: Report a security vulnerability
+    url: https://github.com/3rdBitLabs/Fregata/security/advisories/new
+    about: Disclose security issues privately. Do NOT file a public issue for security bugs.

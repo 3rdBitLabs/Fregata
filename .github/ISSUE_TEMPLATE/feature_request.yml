@@ -1,0 +1,41 @@
+name: Feature request
+description: Suggest a new feature or enhancement for Fregata.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement. Please describe the problem you're trying to solve before jumping to a solution. That helps us evaluate the underlying need, not just the specific implementation.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: What can't you do today, or what's awkward? Concrete use cases help more than abstract wishes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How would you like Fregata to behave? UI sketches, config examples, or rough flow descriptions are welcome.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other ways you've thought about solving this, including workarounds you're using now.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-flight checks
+      options:
+        - label: I searched existing issues and discussions and found no similar request.
+          required: true
+        - label: This is specific to Fregata's macOS experience, not a general Frigate feature request (which belongs upstream).
+          required: true

@@ -1,0 +1,53 @@
+title: "[Help] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Need help getting Fregata working, or stuck on a configuration problem? Fill out the basics below and someone in the community (or a maintainer) will try to help.
+
+        Post in the **Q&A** or **Help** category.
+
+  - type: input
+    id: version
+    attributes:
+      label: Fregata version
+      description: Menu bar -> About Fregata
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: system
+    attributes:
+      label: macOS version and chip
+      placeholder: "macOS 14.5 on M2 Pro"
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+      description: The end goal, not just the immediate step that's failing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Steps you've already taken, settings you've changed, docs you've read.
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Open Fregata's menu bar -> Open Logs Folder, paste relevant excerpts.
+      render: shell
+
+  - type: textarea
+    id: cameras
+    attributes:
+      label: Camera setup (if relevant)
+      description: Models, resolutions, FPS, codec. Skip if the question isn't about recording or detection.

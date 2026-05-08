@@ -1,0 +1,67 @@
+title: "[Benchmark] <Mac model> with <N> cameras"
+labels: ["benchmark"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share how Fregata performs on your hardware. The more apples-to-apples your numbers, the more useful this post is for the next person sizing their Mac.
+
+        Post in the **Benchmarks** category.
+
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model, chip, RAM
+      placeholder: "M4 Mac mini, 16 GB"
+    validations:
+      required: true
+
+  - type: input
+    id: fregata-version
+    attributes:
+      label: Fregata version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: cameras
+    attributes:
+      label: Cameras
+      description: Count, resolution, FPS, codec. Note main vs substream if you split detection from recording.
+      placeholder: |
+        4x Reolink RLC-810A: 4K @ 15fps H.265 main, 640x480 @ 5fps H.264 substream (used for detection)
+    validations:
+      required: true
+
+  - type: textarea
+    id: detector
+    attributes:
+      label: Detector settings
+      description: Model, input size, FPS per camera, anything non-default.
+      placeholder: |
+        yolov7-320 on ANE, 320x320 @ 5fps per camera
+    validations:
+      required: true
+
+  - type: textarea
+    id: load
+    attributes:
+      label: Load and thermals
+      description: CPU / GPU / ANE utilization, fan ramp, sustained vs idle, anything you noticed over a long run.
+      placeholder: |
+        Steady state: ~20% CPU, ANE saturated ~40%, fans inaudible. 24h sustained, no thermal throttling.
+    validations:
+      required: true
+
+  - type: textarea
+    id: storage
+    attributes:
+      label: Storage and retention
+      description: Where recordings are stored, retention settings, observed write rate.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes, gotchas, tips
+      description: Anything that would help someone with a similar setup avoid pitfalls.

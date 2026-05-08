@@ -1,0 +1,73 @@
+name: Bug report
+description: Report a bug or unexpected behavior in Fregata.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. The more specific you can be, the faster we can reproduce and fix it.
+
+        For questions or help, please use [Discussions](https://github.com/3rdBitLabs/Fregata/discussions) instead.
+
+  - type: input
+    id: version
+    attributes:
+      label: Fregata version
+      description: Menu bar -> About Fregata
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: system
+    attributes:
+      label: macOS version and chip
+      placeholder: "macOS 14.5 on M2 Pro"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug. What did you see, and what did you expect to see?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: If you can reproduce reliably, list the steps. If not, describe what you were doing when it happened.
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. Observe ...
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Open Fregata's menu bar -> Open Logs Folder, and paste relevant excerpts here. For larger logs, attach a zip via drag-and-drop.
+      render: shell
+
+  - type: textarea
+    id: cameras
+    attributes:
+      label: Camera setup (if relevant)
+      description: Number of cameras, resolutions, FPS, codec. Skip if the bug is unrelated to recording or detection.
+      placeholder: |
+        4x 4K @ 15fps H.265, plus 720p substream @ 5fps for detection
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-flight checks
+      options:
+        - label: I searched existing issues and found no duplicate.
+          required: true
+        - label: I am running the latest version of Fregata.
+          required: false
+        - label: This is a Fregata-specific bug, not a general Frigate question (which belongs upstream).
+          required: true
