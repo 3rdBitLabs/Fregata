@@ -14,8 +14,10 @@
 <p align="center">
   <a href="https://fregata.app">Website</a> ·
   <a href="https://docs.fregata.app">Documentation</a> ·
+  <a href="https://github.com/3rdBitLabs/Fregata/discussions/12">Support</a> ·
   <a href="https://fregata.app/#download">Download</a> ·
-  <a href="https://github.com/3rdBitLabs/Fregata/discussions">Discussions</a>
+  <a href="https://github.com/3rdBitLabs/Fregata/discussions">Discussions</a> ·
+  <a href="https://github.com/3rdBitLabs/Fregata/issues">Issues</a>
 </p>
 
 <p align="center">
@@ -61,8 +63,8 @@ This is the **community repository** for Fregata.
 | Need | Go here |
 |---|---|
 | Report a bug | [Open an issue](https://github.com/3rdBitLabs/Fregata/issues/new/choose) |
-| Request a feature | [Open an issue](https://github.com/3rdBitLabs/Fregata/issues/new/choose) |
-| Ask for help, share tips, chat | [Discussions](https://github.com/3rdBitLabs/Fregata/discussions) |
+| Request a feature | [Start a discussion](https://github.com/3rdBitLabs/Fregata/discussions/categories/general) |
+| Ask for help, get support, share tips, chat | [Discussions](https://github.com/3rdBitLabs/Fregata/discussions/12) |
 | Submit a community benchmark | [Discussions](https://github.com/3rdBitLabs/Fregata/discussions) - *Benchmarks* category |
 | Read the docs | [docs.fregata.app](https://docs.fregata.app) |
 | Press, media, or review coverage | [Press kit](press-kit/) |
@@ -100,7 +102,9 @@ If you don't need the Apple Silicon work or the `.app` bundle, you can run [Frig
 
 <p align="center">
   <a href="https://fregata.app">fregata.app</a> ·
-  <a href="https://docs.fregata.app">docs</a> ·
-  <a href="https://github.com/3rdBitLabs/Fregata/discussions">discuss</a> ·
-  <a href="https://github.com/3rdBitLabs/Fregata/issues">issues</a>
+  <a href="https://docs.fregata.app">Docs</a> ·
+  <a href="https://github.com/3rdBitLabs/Fregata/discussions/12">Support</a> ·
+  <a href="https://fregata.app/#download">Download</a> ·
+  <a href="https://github.com/3rdBitLabs/Fregata/discussions">Discussions</a> ·
+  <a href="https://github.com/3rdBitLabs/Fregata/issues">Issues</a>
 </p>
