@@ -37,6 +37,14 @@ body:
     validations:
       required: false
 
+  - type: input
+    id: fregata_version
+    attributes:
+      label: Fregata Version
+      placeholder: "e.g. 0.17.1.4"
+    validations:
+      required: true
+
   - type: markdown
     attributes:
       value: "### Cameras"
