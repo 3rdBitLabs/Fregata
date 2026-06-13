@@ -13,7 +13,7 @@ body:
     attributes:
       label: Fregata version
       description: Menu bar -> About Fregata
-      placeholder: "1.0.0"
+      placeholder: "0.17.1.4"
     validations:
       required: true
 
@@ -21,7 +21,7 @@ body:
     id: system
     attributes:
       label: macOS version and chip
-      placeholder: "macOS 14.5 on M2 Pro"
+      placeholder: "macOS 26.5 on M2 Pro"
     validations:
       required: true
 
@@ -43,7 +43,7 @@ body:
     id: logs
     attributes:
       label: Relevant logs
-      description: Open Fregata's menu bar -> Open Logs Folder, paste relevant excerpts.
+      description: Open Fregata's menu bar -> Settings -> Open Frigate Logs paste relevant excerpts.
       render: shell
 
   - type: textarea
