@@ -1,0 +1,188 @@
+title: "[Benchmark] "
+labels: ["benchmark"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submit a Benchmark
+        Share your real-world performance numbers to help the community understand what Fregata can do on Apple Silicon.
+        All fields use the values shown in the Fregata menu bar or your camera settings.
+
+  - type: markdown
+    attributes:
+      value: "### System"
+
+  - type: input
+    id: mac-model
+    attributes:
+      label: Mac Model & Chip
+      description: Include the chip variant (base, Pro, Max, Ultra) and generation.
+      placeholder: "e.g. Mac Mini M4 (base)"
+    validations:
+      required: true
+
+  - type: input
+    id: ram
+    attributes:
+      label: RAM
+      placeholder: "e.g. 16GB"
+    validations:
+      required: true
+
+  - type: input
+    id: storage
+    attributes:
+      label: Storage
+      placeholder: "e.g. 256GB SSD"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "### Cameras"
+
+  - type: input
+    id: camera-count
+    attributes:
+      label: Camera Count
+      placeholder: "e.g. 6"
+    validations:
+      required: true
+
+  - type: input
+    id: camera-make-model
+    attributes:
+      label: Camera Make / Model
+      description: If cameras differ, list each.
+      placeholder: "e.g. Dahua IPC-HDW2849H-S-IL"
+    validations:
+      required: false
+
+  - type: input
+    id: camera-resolution
+    attributes:
+      label: Camera Resolution(s)
+      description: If cameras differ, list each with count.
+      placeholder: "e.g. All 2688×1512 · or · 4× 3840×2160, 2× 1920×1080"
+    validations:
+      required: true
+
+  - type: input
+    id: camera-fps
+    attributes:
+      label: Camera FPS
+      description: If cameras differ, list each.
+      placeholder: "e.g. All 20 · or · 4× 30, 2× 15"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: camera-codec
+    attributes:
+      label: Camera Codec(s)
+      description: Select all that apply.
+      multiple: true
+      options:
+        - H.264
+        - H.264H
+        - H.264B
+        - H.264+ (or "Smart Codec", "AI Codec", etc)
+        - H.265 / HEVC
+        - AV1
+        - MJPEG
+        - Other (describe in Comments)
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### Detection"
+
+  - type: input
+    id: detection-resolution
+    attributes:
+      label: Detection Resolution
+      placeholder: "e.g. 2688×1512"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: detection-substreams
+    attributes:
+      label: Detection Sub-streams Configured
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true
+
+  - type: input
+    id: detection-fps
+    attributes:
+      label: Detection FPS
+      placeholder: "e.g. 10"
+    validations:
+      required: true
+
+  - type: input
+    id: detection-model
+    attributes:
+      label: Detection Model
+      placeholder: "e.g. yolov9s-320×320 (Frigate+ fine-tuned)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: detection-hardware
+    attributes:
+      label: Detection Running On
+      options:
+        - Apple Neural Engine (ANE)
+        - GPU (Metal)
+        - CPU
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### System Resources *(from the Fregata menu bar)*"
+
+  - type: input
+    id: resource-cpu
+    attributes:
+      label: CPU Usage
+      description: Provide a range if it varies.
+      placeholder: "e.g. 5.8%–6.5%"
+    validations:
+      required: true
+
+  - type: input
+    id: resource-ram
+    attributes:
+      label: RAM Usage
+      description: Provide a range if it varies.
+      placeholder: "e.g. 1.5GB–1.9GB"
+    validations:
+      required: true
+
+  - type: input
+    id: resource-latency
+    attributes:
+      label: Detection Latency
+      description: Provide a range if it varies.
+      placeholder: "e.g. 1.7ms–2.2ms"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### Additional Context"
+
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      description: Anything else worth noting — integrations used, throughput stats, skipped detections, workloads running alongside Fregata, etc.
+      placeholder: "e.g. Using the Home Assistant integration — over 24h Fregata processed a max of 323 detections/sec with 0 skipped."
+    validations:
+      required: false
