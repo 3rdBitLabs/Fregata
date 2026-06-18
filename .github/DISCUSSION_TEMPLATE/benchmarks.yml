@@ -158,7 +158,7 @@ body:
   - type: input
     id: resource-cpu
     attributes:
-      label: CPU Usage
+      label: CPU Usage (from the Fregata menu bar)
       description: Provide a range if it varies.
       placeholder: "e.g. 5.8%–6.5%"
     validations:
@@ -167,7 +167,7 @@ body:
   - type: input
     id: resource-ram
     attributes:
-      label: RAM Usage
+      label: RAM Usage (from the Fregata menu bar)
       description: Provide a range if it varies.
       placeholder: "e.g. 1.5GB–1.9GB"
     validations:
@@ -176,7 +176,7 @@ body:
   - type: input
     id: resource-latency
     attributes:
-      label: Detection Latency
+      label: Detection Latency (from the Fregata menu bar or Frigate WebUI)
       description: Provide a range if it varies.
       placeholder: "e.g. 1.7ms–2.2ms"
     validations:
