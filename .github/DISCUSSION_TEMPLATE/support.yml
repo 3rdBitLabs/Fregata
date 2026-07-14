@@ -6,6 +6,8 @@ body:
       value: |
         Need help getting Fregata working, or stuck on a configuration problem? Fill out the basics below and someone in the community (or a maintainer) will try to help.
 
+        **Tip:** the quickest way to get a useful answer is to attach a diagnostic bundle. In Fregata's menu bar, go to **Settings → Troubleshooting → Create Diagnostic Bundle…** and paste the `FDB-…` ID below — it's safe to post publicly and gives us your logs, config, and system state in one go.
+
         Post in the **Q&A** or **Support** category.
 
   - type: input
@@ -25,6 +27,18 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: diagnostic-bundle
+    attributes:
+      label: Diagnostic bundle ID
+      description: >
+        Optional but the fastest path to an answer. Fregata menu bar → Settings →
+        Troubleshooting → Create Diagnostic Bundle…, then paste the FDB-… ID here.
+        It's safe to post publicly — it contains no data and only the Fregata
+        developers can open the bundle.
+        See https://docs.fregata.app/guides/support/#create-a-diagnostic-bundle
+      placeholder: "FDB-XXXXXXXXXXXXXXXXXXXX"
+
   - type: textarea
     id: goal
     attributes:
@@ -42,8 +56,8 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Relevant logs
-      description: Open Fregata's menu bar -> Settings -> Open Frigate Logs paste relevant excerpts.
+      label: Relevant logs (only if you couldn't attach a diagnostic bundle)
+      description: If you couldn't create a diagnostic bundle above, open Fregata's menu bar -> Settings -> Open Frigate Logs and paste relevant excerpts.
       render: shell
 
   - type: textarea
