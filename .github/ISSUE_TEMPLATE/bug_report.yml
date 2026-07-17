@@ -8,6 +8,8 @@ body:
       value: |
         Thanks for taking the time to file a bug. The more specific you can be, the faster we can reproduce and fix it.
 
+        **The single most helpful thing you can attach is a diagnostic bundle.** In Fregata's menu bar, go to **Settings → Troubleshooting → Create Diagnostic Bundle…**, then paste the `FDB-…` ID below. It packages your logs, config, and system state, and it's safe to share publicly — the ID contains no data and only the Fregata developers can open the bundle.
+
         For questions or help, please use [Discussions](https://github.com/3rdBitLabs/Fregata/discussions) instead.
 
   - type: input
@@ -26,6 +28,18 @@ body:
       placeholder: "macOS 14.5 on M2 Pro"
     validations:
       required: true
+
+  - type: input
+    id: diagnostic-bundle
+    attributes:
+      label: Diagnostic bundle ID
+      description: >
+        The fastest way to help us reproduce this. In Fregata's menu bar, go to
+        Settings → Troubleshooting → Create Diagnostic Bundle…, then paste the
+        FDB-… ID here. It's safe to post publicly — it contains no data and only
+        the Fregata developers can open the bundle.
+        See https://docs.fregata.app/guides/support/#create-a-diagnostic-bundle
+      placeholder: "FDB-XXXXXXXXXXXXXXXXXXXX"
 
   - type: textarea
     id: what-happened
@@ -48,8 +62,8 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Logs
-      description: Open Fregata's menu bar -> Open Logs Folder, and paste relevant excerpts here. For larger logs, attach a zip via drag-and-drop.
+      label: Logs (only if you couldn't attach a diagnostic bundle)
+      description: If you couldn't create a diagnostic bundle above, open Fregata's menu bar -> Settings -> Open Frigate Logs and paste relevant excerpts here. For larger logs, attach a zip via drag-and-drop.
       render: shell
 
   - type: textarea
